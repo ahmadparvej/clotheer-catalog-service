@@ -8,6 +8,7 @@ export default [
     ignores: [
       "**/dist/**/*.{js,mjs,cjs,ts}",
       "**/node_modules/**/*.{js,mjs,cjs,ts}",
+      "jest.config.ts",
     ],
   },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
