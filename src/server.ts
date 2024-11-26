@@ -1,8 +1,16 @@
-console.log("welcome to catalog service");
 import { Config } from "./config/index";
+import app from "./app";
 
-function Hello(name: string) {
-  console.log(`hello ${name} on Port ${Config.PORT}`);
-}
+const startServer = () => {
+  const PORT = Config.PORT;
+  try {
+    app.listen(PORT, () => {
+      console.log(`Server is running on  http://localhost:${PORT}`);
+    });
+  } catch (error) {
+    console.log(error);
+    process.exit(1);
+  }
+};
 
-Hello("parvej");
+startServer();
