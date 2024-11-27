@@ -10,7 +10,7 @@
     "lint": "npx eslint . --fix",
     "fix": "npm run format && npm run lint",
     "test": "jest --watch --runInBand",
-    "test:coverage": "jest --coverage --watch --runInBand",
+    "test:coverage": "jest --no-cache --coverage --all --runInBand",
     "prepare": "husky"
   },
   "author": "Parvej Ahmad",
