@@ -9,6 +9,7 @@ export default [
       "**/dist/**/*.{js,mjs,cjs,ts}",
       "**/node_modules/**/*.{js,mjs,cjs,ts}",
       "jest.config.ts",
+      "**/test/**/*",
     ],
   },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
