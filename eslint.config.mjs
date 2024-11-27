@@ -10,6 +10,7 @@ export default [
       "**/node_modules/**/*.{js,mjs,cjs,ts}",
       "jest.config.ts",
       "**/test/**/*",
+      "**/coverage/**/*",
     ],
   },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
