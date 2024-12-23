@@ -4,7 +4,7 @@
   "description": "this is catalog service provider api",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "cross-env NODE_ENV=development nodemon src/server.ts",
     "build": "tsc",
     "format": "npx prettier . --write",
     "lint": "npx eslint . --fix",
@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@types/config": "^3.3.5",
     "@types/express": "^5.0.0",
     "@types/http-errors": "^2.0.4",
     "@types/jest": "^29.5.14",
@@ -41,9 +42,13 @@
     ]
   },
   "dependencies": {
+    "config": "^3.3.12",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-validator": "^7.2.0",
     "http-errors": "^2.0.0",
+    "js-yaml": "^4.1.0",
     "nodemon": "^3.1.7",
     "winston": "^3.17.0"
   }
